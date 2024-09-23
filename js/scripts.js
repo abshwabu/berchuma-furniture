@@ -83,6 +83,7 @@ const translations = {
         contact_email: "Email address",
         contact_phone: "Phone number",
         contact_message: "Message",
+        address: "Bethel, Apple plaza 2nd floor",
     },
     am: {
         hero_title: "ዘመናዊ እና ቀላል የቤት ዕቃዎችን ለመግዛት የእርስዎ ተወዳጅ ቦታ",
@@ -117,6 +118,8 @@ const translations = {
         contact_email: "የኢሜል አድራሻ",
         contact_phone: "ስልክ ቁጥር",
         contact_message: "መልእክት",
+        address: "ቤተል አፕል ፕላዛ 2ኛ ፎቅ",
+
     }
 }
 let hero_title = document.getElementById("hero_title");
@@ -151,6 +154,7 @@ let contact_name = document.getElementById("name");
 let contact_email = document.getElementById("email");
 let contact_phone = document.getElementById("phone");
 let contact_message = document.getElementById("message");
+let address = document.getElementById("address");
 
 const languageSelector = document.querySelector("select");
 languageSelector.addEventListener("change", (event) => {
@@ -187,10 +191,11 @@ const setLanguage = (language) => {
         item6_title.innerHTML = translations.en.item6_title;
         contact_title.innerHTML = translations.en.contact_title;
         contact_text.innerHTML = translations.en.contact_text;
-        contact_name.placeholder = translations.en.contact_name;
-        contact_email.placeholder = translations.en.contact_email;
-        contact_phone.placeholder = translations.en.contact_phone;
-        contact_message.placeholder = translations.en.contact_message;
+        contact_name.innerHTML = translations.en.contact_name;
+        contact_email.innerHTML = translations.en.contact_email;
+        contact_phone.innerHTML = translations.en.contact_phone;
+        contact_message.innerHTML = translations.en.contact_message;
+        address.innerHTML = translations.en.address
     } else if (language== 'am') {
         console.log("Amharic");
         hero_title.innerHTML = translations.am.hero_title;
@@ -221,9 +226,10 @@ const setLanguage = (language) => {
         item6_title.innerHTML = translations.am.item6_title;
         contact_title.innerHTML = translations.am.contact_title;
         contact_text.innerHTML = translations.am.contact_text;
-        contact_name.placeholder = translations.am.contact_name;
-        contact_email.placeholder = translations.am.contact_email;
-        contact_phone.placeholder = translations.am.contact_phone;
-        contact_message.placeholder = translations.am.contact_message;
+        contact_name.innerHTML = translations.am.contact_name;
+        contact_email.innerHTML = translations.am.contact_email;
+        contact_phone.innerHTML = translations.am.contact_phone;
+        contact_message.innerHTML = translations.am.contact_message;
+        address.innerHTML = translations.am.address
     }
 }
