@@ -34,7 +34,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfilio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -106,66 +106,136 @@
             </div>
         </section>
         <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50"id="item1_title">Kitchen</div>
-                                <div class="project-name" id="item1_text">Modern Kitchen cabinet</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50"id="item2_title">Bed</div>
-                                <div class="project-name" id="item2_text">Simple Kid's Bed</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50"id="item3_title">Living Room</div>
-                                <div class="project-name" id="item3_text">Modern Blue Sofa</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50"id="item4_title">Dresser</div>
-                                <div class="project-name" id="item4_text">Modern Nightstand</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50"id="item5_title">Dresser</div>
-                                <div class="project-name" id="item5_text">Simple Modern Wardrobe</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50"id="item6_title">Bed</div>
-                                <div class="project-name" id="item6_text">Modern Red Bed</div>
-                            </div>
-                        </a>
-                    </div>
+        <section id="portfilio" class="portfilio">
+            <div class="container">
+              <div class="row text-center mt-5">
+                <h1 class="fw-bold display-3 text-uppercase">latest work</h1>
+                <div class="heading-line"></div>
+                <p class="lead">
+                  This are some of our latest works.
+                </p>
+              </div>
+              <!--filter buttons-->
+        
+              <div class="row text-center mt-5 mb-3 g-3">
+                <div class="col-md-12">
+                  <button class="btn btn-outline-primary" type="button" data-filter="All">All</button>
+                  <button class="btn btn-outline-primary" type="button" data-filter="Kitchen">Kitchen</button>
+                  <button class="btn btn-outline-primary" type="button" data-filter="Beds"> Beds</button>
+                  <button class="btn btn-outline-primary" type="button" data-filter="Sofas">Sofas</button>         
+                  <button class="btn btn-outline-primary" type="button" data-filter="Dressing">Dressing</button>         
                 </div>
+              </div> 
+              <div class="row  text-center">
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Kitchen">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/1.jpg" alt="Portfolio 1" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Kitchen Cabinet</h4>
+                        <p>Price: </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Beds">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/2.jpg" alt="Portfolio 2" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Simple Kids bed</h4>
+                        <p>price: </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Add more items with correct data-category -->
+                
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Sofas">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/3.jpg" alt="prtfilio 3 picture" title="portfolio 3 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern Blue sofa</h4>
+                        <p>Price:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Dressing">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/4.jpg" alt="prtfilio 4 picture" title="portfolio 4 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern Nightstand</h4>
+                        <p>Price:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Dressing">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/5.jpg" alt="prtfilio 5 picture" title="portfolio 5 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern wardrobe</h4>
+                        <p>Price: </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Beds">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/6.jpg" alt="prtfilio 6 picture" title="portfolio 6 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern Red bed</h4>
+                        <p>price: </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Kitchen">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/7.jpg" alt="prtfilio 7 picture" title="portfolio 7 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern Kitchen cabinet</h4>
+                        <p>Price:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Sofas">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/8.jpg" alt="prtfilio 8 picture" title="portfolio 8 picture" class="img-fluid" style="height: 420px;">
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern light Blue Sofa</h4>
+                        <p>Price:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="Beds">
+                  <div class="prtfolio-box shadow">
+                    <img src="assets/img/portfolio/thumbnails/9.jpg" alt="prtfilio 9 picture" title="portfolio 9 picture" class="img-fluid" >
+                    <div class="portfolio-info">
+                      <div class="caption">
+                        <h4>Modern Kids Bed</h4>
+                        <p>Price:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+             
             </div>
-        </div>
+            
+          </section>
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -247,6 +317,7 @@
                 </div>
               
         </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->

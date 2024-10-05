@@ -233,3 +233,32 @@ const setLanguage = (language) => {
         address.innerHTML = translations.am.address
     }
 }
+
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');  // Get the filter type from the clicked button
+
+      // Get all portfolio items
+      const items = document.querySelectorAll('.portfolio-item');
+
+      // If "All" is clicked, show all items
+      if (filter === 'All') {
+        items.forEach(item => {
+          item.style.display = 'block';  // Show all items
+        });
+      } else {
+        // Otherwise, filter items by category
+        items.forEach(item => {
+          if (item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';  // Show matching items
+          } else {
+            item.style.display = 'none';  // Hide non-matching items
+          }
+        });
+      }
+
+      // Optional: Add active class to highlight the clicked button
+      document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
